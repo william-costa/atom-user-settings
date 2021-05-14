@@ -1,0 +1,24 @@
+#DEBUG DE VARIAVEIS
+'.source.php':
+  'debug sem exit':
+    'prefix': 'debug'
+    'body': 'echo "<pre>";\nprint_r($1);\necho "</pre>";'
+
+  'debug com exit':
+      'prefix': 'debuge'
+      'body': 'echo "<pre>";\nprint_r($1);\necho "</pre>"; exit;'
+
+  'teste com GET':
+      'prefix': 'teste'
+      'body': '\n\tif(isset($_GET["debug"])){\n\t\techo "<pre>"; print_r($1); echo "</pre>";\n\t};\n'
+
+  'teste com GET e exit':
+      'prefix': 'testee'
+      'body': '\n\tif(isset($_GET["debug"])){\n\t\techo "<pre>"; print_r($1); echo "</pre>"; exit;\n\t};\n'
+
+#ERROS
+
+  'Mostra erros':
+      'prefix': 'display_errors'
+      'body': 'ini_set("display_errors",true);'
+
