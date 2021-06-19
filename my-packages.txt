@@ -15,7 +15,9 @@ language-json-comments
 linter
 linter-php
 linter-ui-default
+minimap
 platformio-ide-terminal
+pigments
 quick-query
 quick-query-sqlite
 react-native-snippets

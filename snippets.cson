@@ -1,4 +1,16 @@
 #DEBUG DE VARIAVEIS
+'.source.js':
+  'Console Debug':
+    'prefix': 'debug'
+    'body': 'console.log($1);'
+
+  'JSON Debug':
+      'prefix': 'debugj'
+      'body': 'console.log(JSON.stringify($1));'
+
+# ---------------------------------LANGUAGE PHP---------------------------------------
+
+#DEBUG DE VARIAVEIS
 '.source.php':
   'debug sem exit':
     'prefix': 'debug'
